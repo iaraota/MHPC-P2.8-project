@@ -1,0 +1,2 @@
+/usr/bin/ar qc libenergy.a CMakeFiles/energy.dir/src/energy.c.o
+/usr/bin/ranlib libenergy.a
