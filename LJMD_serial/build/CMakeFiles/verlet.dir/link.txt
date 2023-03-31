@@ -1,0 +1,2 @@
+/usr/bin/ar qc libverlet.a CMakeFiles/verlet.dir/src/verlet.c.o
+/usr/bin/ranlib libverlet.a

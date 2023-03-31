@@ -1,0 +1,2 @@
+/usr/bin/ar qc libutilities.a CMakeFiles/utilities.dir/src/utilities.c.o
+/usr/bin/ranlib libutilities.a
