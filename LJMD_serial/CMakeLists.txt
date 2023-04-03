@@ -37,25 +37,28 @@ target_link_libraries(ljmd-serial.x PRIVATE ${SOURCE_FILES} )
 
 
 # define target for make serial
-add_custom_target(serial
-    COMMAND make
-)
+# add_custom_target(serial
+#     COMMAND make
+# )
 
-# define target for make parallel
-add_custom_target(parallel
-    COMMAND make 
-)
+# # define target for make parallel
+# add_custom_target(parallel
+#     COMMAND make 
+# )
 
 
 # # define target for cleaning
 # add_custom_target(clean-files COMMAND rm -f *.mod *.o *.x)
 
-# # define target for running checks
-# add_custom_target(run-checks
+#define target for running checks
+# add_custom_target(check_all
 #     DEPENDS ljmd-serial.x
 #     COMMAND ${CMAKE_MAKE_PROGRAM} -C examples check
 # )
-
+# add_custom_target(check
+# COMMAND sh ${PROJECT_SOURCE_DIR}/tests/check_argon108.sh
+# COMMAND sh ${PROJECT_SOURCE_DIR}/tests/check_argon2916.sh
+# )
 
 # The check target was done to be compatible with the old makefile. 
 # We will use the CTest framework to run the tests.
