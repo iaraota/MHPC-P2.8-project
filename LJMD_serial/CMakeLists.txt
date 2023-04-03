@@ -47,14 +47,14 @@ add_custom_target(parallel
 )
 
 
-# define target for cleaning
-add_custom_target(clean-files COMMAND rm -f *.mod *.o *.x)
+# # define target for cleaning
+# add_custom_target(clean-files COMMAND rm -f *.mod *.o *.x)
 
-# define target for running checks
-add_custom_target(run-checks
-    DEPENDS ljmd-serial.x
-    COMMAND ${CMAKE_MAKE_PROGRAM} -C examples check
-)
+# # define target for running checks
+# add_custom_target(run-checks
+#     DEPENDS ljmd-serial.x
+#     COMMAND ${CMAKE_MAKE_PROGRAM} -C examples check
+# )
 
 
 # The check target was done to be compatible with the old makefile. 
