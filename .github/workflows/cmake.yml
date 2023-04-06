@@ -24,8 +24,8 @@ jobs:
       # Install Google Test
       run: sudo apt-get install libgtest-dev
       
-    - name: Setup OpenMPI
-      uses: kawamuray/setup-mpich@v2
+    - name: Setup MPI
+      uses: actions/setup-mpi@v1
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
